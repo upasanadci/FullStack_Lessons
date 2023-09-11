@@ -1,0 +1,33 @@
+div{
+    height:200px;
+    width:200px;
+    margin:20px 20px;
+}
+
+.one{
+    background-color: orange;
+    position:fixed;
+    left:0px;
+    top:20px;
+}
+
+.two{
+    background-color: aqua;
+    position:fixed;
+    right:0px;
+    top:0px;
+}
+
+.three{
+    background-color: blue;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+.four{
+    background-color:brown;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+}

@@ -1,0 +1,32 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 200px 1fr 150px;
+    grid-template-areas: 
+    "head head" 
+    "nav main"
+    "nav foot";
+ height: 100vh;
+}
+
+
+header {
+    background-color: violet;
+    grid-area: head;
+}
+
+aside {
+    grid-area: nav;
+    background-color: orange;
+}
+
+main {
+    grid-area: main;
+    background-color: yellowgreen;
+}
+
+footer {
+    grid-area: foot;
+    background-color: lightgreen;
+}

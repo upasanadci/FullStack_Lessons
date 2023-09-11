@@ -1,0 +1,55 @@
+.grid-container {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows   : 150px 1fr 1fr 1fr 100px;
+    height               : 100vh;
+}
+
+
+.item {
+    font-size: 3rem;
+}
+
+
+.one {
+    background-color: pink;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.two {
+    background-color: orange;
+    grid-column: 1/2;
+    grid-row: 2/span 3;
+}
+
+.three {
+    background-color: violet;
+}
+
+.four {
+    background-color: lightgreen;
+}
+
+.five {
+    background-color: cyan;
+
+}
+
+.six {
+    background-color: greenyellow;
+
+}
+
+.seven {
+    background-color: blue;
+    grid-area: 4/2/5/4;
+
+
+}
+
+.eight {
+    background-color: tomato;
+    grid-column: 1/span 3;
+
+}

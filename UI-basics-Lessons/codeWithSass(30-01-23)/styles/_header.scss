@@ -1,0 +1,17 @@
+@mixin flexContainer1(){
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    height: 100px;
+    background-color: blue;
+    @include flexContainer1();
+    color: rgb(57, 209, 15);
+    margin-bottom: 20px;
+  }
+  header button {
+    background-color: red;
+    color: rgb(57, 209, 15);
+    font-size: 20px;
+  }

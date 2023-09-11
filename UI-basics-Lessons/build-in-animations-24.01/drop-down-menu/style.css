@@ -1,0 +1,54 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+    display: flex;
+    list-style: none;
+    background-color: lightgray;
+}
+
+.navBar > li {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    border: 2px solid rgb(189, 187, 187);
+    background-color: white;
+    left: 0;
+    top: 35px;
+    width: 110px;
+    box-shadow: -4px 4px 5px rgb(192, 190, 190);
+}
+
+.submenu li {
+    padding: 7px;
+    transition: all 0.5s;
+    transform: translateX(-5px);
+}
+
+.submenu li:hover {
+    background-color: lightgray;
+    transform: translateX(0);
+}
+
+.products:hover .submenu {
+    display: block;
+}

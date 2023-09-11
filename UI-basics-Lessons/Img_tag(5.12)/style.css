@@ -1,0 +1,35 @@
+img{
+    border:2px solid red;
+    border-radius: 24px;
+    object-fit: cover;;
+    
+}
+p{
+    width: 300px;
+    height: 126px;
+    border-radius:12px ;
+    color: blue;
+    font-size: large;
+    border: 2px solid black;
+   
+}
+
+.wrapper{
+    height:700px;
+    width: 500px;
+    border: 2px solid rgb(230, 214, 214);
+    border-radius: 8px;
+    
+}
+.container{
+    height:auto;
+    width: 800px;
+    border:2px solid black;
+    border-radius: 12px;
+    
+}
+.listContainer{
+    list-style-type: none;
+    font-size: 14px;
+    color: rgb(9, 94, 51);
+}

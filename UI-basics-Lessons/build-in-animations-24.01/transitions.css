@@ -1,0 +1,43 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 30px;
+}
+
+.linear {
+    transition: all 1s linear;
+}
+
+div:hover {
+    width: 300px;
+}
+
+/*ease: starts slowly, speeds up in the middle and slows down again */
+
+.ease {
+    transition: all 1s ease;
+}
+
+
+/* ease-in : starts slowly and then speeds up  */
+
+.ease-in {
+    transition: all 1s ease-in;
+}
+
+
+/* ease-out :speeds up at the beginning the the goes slowly  */
+
+.ease-out {
+    transition: all 1s ease-out;
+}
+
+/* ease-in-out : start slowly then speeds up in the middle end  slows down again*/
+
+.ease-in-out {
+    transition: all 1s ease-in-out;
+}
+

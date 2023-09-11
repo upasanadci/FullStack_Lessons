@@ -1,0 +1,29 @@
+
+
+div {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    animation-name: shape;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 10px;
+    margin: 50px auto;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes shape {
+    from {
+        background-color: orange;
+        width: 300px;
+        transform: translateY(10px);
+    }
+    to {
+        background-color: purple;
+        width: 50px;
+        transform: translateY(100px);
+    }
+    
+}

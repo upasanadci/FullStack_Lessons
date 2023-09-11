@@ -1,0 +1,29 @@
+ :root {
+     /* font-size: 10px; */
+     font-size: 62.5%; /* === 10px */
+     /*the default font size of the root element is 16px. 62.5% of 16px will give as 10px  */
+ }
+
+
+
+ header h1 {
+     text-align: center;
+ }
+
+ .right {
+     font-size : 2rem;
+     /* 20px because rem is 10px */
+     text-align: right;
+ }
+
+ .center {
+     text-align: center;
+     font-size : 2.5rem;
+     /*  25px */
+ }
+
+ .justify {
+     text-align: justify;
+     font-size : 1.5rem;
+     /* 15px */
+ }

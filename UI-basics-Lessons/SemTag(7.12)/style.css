@@ -1,0 +1,52 @@
+main{
+    height: auto;
+    width: 700px;
+    border: 2px solid red;
+    margin: 0px auto;
+    background-color: antiquewhite;
+    border-radius: 7px;
+    
+}
+section{
+    height: 300px;
+    width: 330px;
+    border: 2px solid rgb(44, 42, 42);
+    margin-bottom: 10px;
+    border-radius: 21px;
+    overflow: auto;
+}
+header{
+    height:100px;
+    width: 175px;
+    margin:0px auto;
+}
+img{
+    border: 2px solid yellow;
+    border-radius: 12px;
+}
+article{
+    height: 300px;
+    width: 330px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    overflow: auto;
+    margin-left: 64px;
+}
+.secContainer{
+    font-size: larger;
+    color: rgb(22, 209, 63);
+}
+
+#myText{
+    color:brown;
+    font-size: 20px;
+}
+
+.listItem{
+    list-style-type: none;
+
+}
+
+.listItem >li:first-child{
+    background-color: rgb(15, 120, 211);
+}

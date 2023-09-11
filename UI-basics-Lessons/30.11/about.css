@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(4, 153, 4);
+}
+
+
+h1 {
+    background-color: rgba(50, 45, 65, 0.7);
+    color           : lightblue;
+}
+
+h1:hover {
+    background-color: black;
+}
+
+h2 {
+    background-color: #f0f;
+    /* same as #ff00ff when the characters are the same */
+    color           : #fff;
+}
+
+
+p {
+    color: #feaeff;
+}
+
+.navLinks:hover {
+    color           : rgb(255, 255, 255);
+    background-color: #f0f;
+}
+
+.navLinks {
+    text-decoration : none;
+    padding         : 4px;
+    border          : 2px solid rgb(91, 250, 42);
+    background-color: aqua;
+    border-radius   : 20%;
+}
+
+
+#rgbLink:active {
+    font-size: large;
+    color    : white;
+}
+
+.visitLink:visited {
+    color: white;
+}

@@ -1,0 +1,22 @@
+/* here we add 2 different fonts separately  */
+ /* @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'); */
+
+ /* Here we add 2 different fonts together */
+ /* @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Chivo+Mono&display=swap');  */
+
+ .first h1 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+ }
+
+ .first p {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .second h1 {
+     font-family: 'Chivo Mono', monospace;
+ }
+
+ .second p {
+     font-family: 'Barlow Condensed', sans-serif;
+ }

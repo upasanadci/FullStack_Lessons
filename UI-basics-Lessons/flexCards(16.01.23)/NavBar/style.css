@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+   /* justify-content: flex-end;*/
+
+    align-items: center;
+}
+.logo{
+   /* width: 825px;
+    margin-left: 88px;
+    margin-left: auto;
+    width: 200px;
+    order: 3;*/
+}
+.list-item{
+  /*  order:1*/
+}
+.my-icon{
+    color:white;
+    font-size: 30px;
+}
+.menu{
+    padding:30px;
+}
+li{
+    display: inline;
+    font-size: 20px;
+    margin: 10px;
+}
+.list-item a{
+    color:white;
+    text-decoration: none;
+}
+@media only screen and (max-width: 480px){
+    .list-item{
+        display: none;
+    }
+}
+
+/*Card CSS*/
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: antiquewhite;
+    width: 200px;
+    border: 2px solid #b5a7a7;
+    border-radius: 10px;
+    margin: 10px;
+}
+.card-img{
+    height:150px;
+    margin-bottom: 10px;
+}
+.img1{
+    background-image: url(/Images/img.jpg);
+}
+.img2{
+    background-image: url(/Images/img2.jpg);
+    background-position: center;
+}
+.img3{
+    background-image: url(/Images/img3.jpg);
+    
+}
+.card h2{
+    padding:10px;
+}
+.card p{
+    padding:10px;
+}
+.card a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    margin-top: 10px;
+    display: block;
+    border: 2px solid yellow;
+    border-radius: 15px;
+   
+}
+.card:hover{
+    cursor: pointer;
+    color:red;
+    transition: all 1s ease;
+    transform:scale(1.03);
+    
+   
+}
+@media only screen and (max-width: 480px){
+    .card{
+        background-color: #d5d5e1;
+        border:2px solid yellow;
+    }
+    .card a{
+        color:antiquewhite;
+    }
+}

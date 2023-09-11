@@ -1,0 +1,141 @@
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: normal  ; /* reverse , alternate , alternate-reverse */
+    animation-play-state: running;  /* paused */
+    /* animation: colors 1s linear ; */
+}
+
+
+/* @keyframes colors {
+    from {
+        background-color:orange;
+    }
+    to {
+        background-color: red;
+    }
+} */
+
+@keyframes colors {
+    0% {
+        background-color: rgb(144, 142, 138);
+        width: 230px;
+    }
+    25% {
+        background-color: blue;
+        width: 270px;
+    }
+    50% {
+        background-color: red;
+        width: 300px;
+    }
+    75% {
+        background-color: pink;
+        width: 250px;
+    }
+    100% {
+        background-color: rgb(17, 15, 10);
+        width: 200px;
+    }
+}
+
+.icon  {
+    border: 2px solid black;
+    margin-top: 2px;
+}
+
+.first {
+    font-size: 2rem;
+    color: red;
+    animation: move 2s linear infinite;
+   
+}
+
+.second {
+    font-size: 2rem;
+    color: red;
+    animation: move 2s ease-in 0.5s infinite;
+}
+
+.third {
+    font-size: 2rem;
+    color: red;
+    animation: move 2s ease-out 1s infinite;
+}
+
+/* @keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(800px);
+        opacity: 0;
+        
+    } */
+    /* 100% {
+       opacity: 0;
+    } */
+/* } */
+
+
+
+.expandme {
+    animation: expand 2s ease;
+}
+
+@keyframes expand {
+    0% {
+        letter-spacing: -10px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+header {
+    padding: 0.5rem;
+    background-color: lightgray;
+}
+
+.head {
+    color: rgb(75, 73, 73);
+    animation: comeAndGo 8s linear infinite;
+}
+
+.head:hover {
+    animation-play-state: paused;
+}
+
+@keyframes comeAndGo {
+    0% {
+        transform: translateX(100%); 
+    }
+    20% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(10%);
+    }
+    80% {
+        transform: translateX(10%);
+    }
+    85% {
+        transform: translateX(20%);
+    }
+       
+    100% {
+        transform: translateX(-100%);
+    }
+
+}

@@ -1,0 +1,18 @@
+.grid-container{
+    display: grid;
+   
+    grid-template-columns:200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    /**grid-template-rows: minmax(auto,50%)/
+    /*grid-template-columns: 50px repeat(4,1fr) 50px;*/
+    grid-gap:30px;    
+    place-content: center center;
+    
+    /*1fr=((width of grid) - 3rem -25%)/3 */
+  
+}
+.grid-container div{
+    background-image: url(/Image/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

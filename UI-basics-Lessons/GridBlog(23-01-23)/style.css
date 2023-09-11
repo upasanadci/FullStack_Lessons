@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 'header header header'
+                        'aside1 main aside2'
+                        'footer footer footer';
+}
+header{
+    grid-area: header;
+    background-color: rgb(5, 68, 68);
+}
+.aside1{
+    grid-area: aside1;
+    background-color: rgb(161, 252, 252);
+    padding: 10px;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+
+}
+.aside2{
+    grid-area: aside2;
+    background-color: rgb(161, 252, 252);
+    padding: 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(5, 68, 68);
+    grid-area: footer;
+    background-color: rgb(5, 68, 68);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.list-item{
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.list-item li{
+    color:white;
+    font-size: 20px;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 5px;
+    list-style-type: none;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.text{
+    color:white;
+    -webkit-box-shadow: 10px 10px 119px 0px rgba(208,214,28,1);
+    -moz-box-shadow: 10px 10px 119px 0px rgba(208,214,28,1);
+    box-shadow: 10px 10px 119px 0px rgba(208,214,28,1);
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+}
+.img-container{
+    height: 300px;
+    width: 300px;
+    border: 2px solid #ab9696;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    background-color: cadetblue;
+    
+}
+.aside2 li{
+    list-style-type: none;
+}
+
+@media screen and (max-width:500px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 300px auto 300px 100px;
+        grid-template-areas: 'header'
+                                'aside1'
+                                'main'
+                                'aside2'
+                                'footer';
+    }
+    header{
+       grid-template-areas: header;
+       position: fixed;
+       width: 100%;
+    }
+    header .text{
+        display: none;
+    }
+    .aside1{
+        grid-area: 'aside1';
+    }
+    main{
+        grid-area: 'main';
+    }
+    .aside2{
+        grid-area: 'aside2';
+    }
+    footer{
+        grid-area: 'footer';
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Span</title>
+    <link rel="stylesheet" href="./tableSpan.css">
+</head>
+
+<body>
+    <h1>Tables with colspan and rowspan</h1>
+    <table>
+        <caption>Name List</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Telephone</th>
+                <th>Address-1</th>
+                <th>Address-2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Jill</td>
+                <td rowspan="2">Smith</td>
+                <td rowspan="2">45</td>
+                <td>+595588441102</td>
+                <td rowspan="2">some street 12</td>
+                <td rowspan="2">main street 1 </td>
+            </tr>
+            <tr>
+                <td>+498851147899</td>
+            </tr>
+            <tr style="background-color: red;">
+                <td>Eve</td>
+                <td>Doe</td>
+                <td>23</td>
+                <td>+490880744689</td>
+                <td colspan="2">newStreet 45</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Mike</td>
+                <td rowspan="2">Smith</td>
+                <td rowspan="2">36</td>
+                <td>+492568988877</td>
+                <td rowspan="2" colspan="2">otherStreet 33</td>
+            </tr>
+            <tr>
+                <td>+492568988878</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Lorem ipsum dolor sit amet consectetur.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Table with colgroup</h1>
+
+    <table>
+        <colgroup>
+            <col>
+            <col span="2" class="orange">
+            <col class="purple">
+            <col span="2" class="pink">
+        </colgroup>
+        <caption>Students grades</caption>
+        <thead>
+            <th></th>
+            <th>CSS</th>
+            <th>HTML</th>
+            <th>Saas</th>
+            <th>Javascript</th>
+            <th>React</th>
+        </thead>
+        <tbody>
+            <tr>
+            <th>Mads</th>
+            <td>90</td>
+            <td>94</td>
+            <td>85</td>
+            <td>89</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <th>Elena</th>
+            <td>90</td>
+            <td>94</td>
+            <td>85</td>
+            <td>89</td>
+            <td>99</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

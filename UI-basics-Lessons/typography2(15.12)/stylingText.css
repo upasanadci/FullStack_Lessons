@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&display=swap');
+
+.style p:first-of-type {
+    font-style: italic;
+}
+
+.light {
+    font-weight: 200;
+    font-family: 'Oswald', sans-serif;
+}
+
+.bold {
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+
+.extraBold {
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color      : red;
+}
+
+
+.decoration p {
+    /* text-decoration:line-through */
+    /* text-decoration: overline; */
+    /* text-decoration:underline blue wavy 3px; */
+
+    /* decoration line / color / style / thickness  */
+    text-decoration: underline overline orange double 3px;
+}
+
+.capital {
+    text-transform: capitalize;
+    /* the first letter of every word it's gonna be capital */
+}
+
+.uppercase {
+    text-transform: uppercase;
+    /* All letters are gonna be capital */
+}
+
+.shadow p {
+    /* x-position / y-position / blur-radius / color */
+    text-shadow: -5px -5px 5px green;
+    font-size  : 1.5rem;
+}
+
+
+.space {
+    letter-spacing: 7px;
+}
+
+.height {
+    line-height: 35px;
+    background-color: greenyellow;
+}
+
+.center {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 300px;
+    text-decoration: underline blue wavy 4px;
+    text-shadow: -5px -5px 5px green;
+}

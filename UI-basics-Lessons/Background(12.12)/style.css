@@ -1,0 +1,44 @@
+main{
+    height: auto;
+    width:800px;
+}
+.content-container{
+    padding-top: 10px;
+    font-size: 20px;
+    margin: 0px auto;
+    width:230px;
+    height:200px;
+}
+
+.bg-image{
+    background-image: url(Images/autum.jpg),url(Images/nature.jpg),url(Images/nature.jpg),url(Images/autum.jpg);
+    background-size: 200px 100px, 200px 100px;
+    height: 300px;
+    width: 600px;
+    border: 8px dotted red;
+    background-repeat:no-repeat;
+    background-position: left top,right bottom,left bottom,right top;
+    padding:20px;
+  
+    background-origin: padding-box;
+    background-color: antiquewhite;
+    background-clip: content-box;
+}
+
+.bg-gradient{
+    background: radial-gradient(circle, hsla(358, 77%, 46%, 1) 35%, hsla(131, 79%, 48%, 1) 60%);
+    margin-top: 20px;
+    height:300px;
+    width:600px;
+    border:6px solid green
+}
+.gd-content{
+    margin-top: 50px;
+    margin-left: 76px;
+    padding:20px;
+    height:100px;
+    width:400px;
+    font-size: smaller;
+
+    border:2px solid black;
+}

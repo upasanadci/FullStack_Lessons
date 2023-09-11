@@ -1,0 +1,62 @@
+header {
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  color: rgb(57, 209, 15);
+  margin-bottom: 20px;
+}
+
+header button {
+  background-color: red;
+  color: rgb(57, 209, 15);
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 255, 127);
+}
+
+section {
+  background-color: rgb(179, 29, 137);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+section h1 {
+  color: rgb(212, 220, 221);
+}
+section button {
+  color: rgb(212, 220, 221);
+  font-size: 18px;
+}
+
+nav {
+  background-color: rgb(179, 29, 137);
+  margin-bottom: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+}
+nav li {
+  list-style: none;
+  align-items: center;
+}
+nav li a {
+  text-decoration: none;
+  color: rgb(212, 220, 221);
+}
+nav li a:hover {
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */

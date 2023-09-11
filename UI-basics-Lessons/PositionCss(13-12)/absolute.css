@@ -1,0 +1,30 @@
+div{
+    height:200px;
+    width:200px;
+    margin: 20px 20px;
+}
+
+.one{
+    background-color: orange;
+}
+.two{
+    background-color: rgb(41, 222, 24);
+}
+.three{
+    background-color: rgb(21, 64, 174);
+    position: relative;
+}
+.four{
+    background-color: rgb(255, 0, 132);
+  
+
+}
+.box{
+    height:50px;
+    width:50px;
+    color:white;
+    top: 80px;
+    left:30px;
+    position: absolute;
+  
+}

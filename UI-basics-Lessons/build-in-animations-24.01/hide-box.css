@@ -1,0 +1,33 @@
+
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+main {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.left , .right {
+    background-color: pink;
+    transition: all 1s ease-out;
+}
+main:hover .left {
+    transform: translateX(200px) rotate(180deg);
+
+}
+
+main:hover .right {
+    transform: translateX(-200px) rotate(-180deg);
+}

@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+}
+.title{
+    font-size: 4rem;
+    color:black;
+}
+.subtitle{
+    font-size: 4rem;
+    color:brown
+}
+/*@media (orientation:landscape){
+    .title{
+        color:red;
+    }
+}
+@media (orientation:portrait){
+    .subtitle{
+        color:green;
+    }
+}*/
+@media print{
+    .title{
+    color:rgb(184, 227, 171);
+    }
+    .subtitle{
+        color:rgb(184, 227, 171);
+    }
+}
+@media (min-width:480px){
+    .title{
+        color:pink;
+    }
+    .subtitle{
+        color:yellow;
+    }
+}

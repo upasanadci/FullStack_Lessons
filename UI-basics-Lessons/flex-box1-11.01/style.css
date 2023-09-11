@@ -1,0 +1,97 @@
+
+* {
+     margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(79, 74, 74);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 9px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right:9px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.flex-container {
+    /* width: 800px; */
+    height: 500px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container div {
+    font-size: 34px;
+    width: 300px;
+    /* height: 200px; */
+}
+
+.orange {
+    background-color: orange;
+    /* height: 350px; */
+}
+
+.pink {
+    background-color: pink;
+    padding-top: 100px;
+}
+
+.lightblue {
+    background-color: lightblue;
+    padding-top: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+
+
+.big-container {
+    border: 3px solid green;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* align-content: space-evenly; */
+}
+
+.big-container div:nth-child(odd) {
+    width: 300px;
+    background-color: rgb(9, 123, 123);
+    height: 200px;
+}
+
+
+.big-container div:nth-child(even) {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(226, 0, 188);
+}

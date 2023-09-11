@@ -1,0 +1,66 @@
+.heading {
+    text-align: center;
+}
+
+
+.heading::before {
+    content         : "";
+    display         : inline-block;
+    width           : 50px;
+    height          : 5px;
+    background-color: orange;
+    margin          : 0 10px 8px 0;
+}
+
+.heading::after {
+    content         : "";
+    display         : inline-block;
+    width           : 50px;
+    height          : 5px;
+    background-color: orange;
+    margin          : 0 0 8px 10px;
+}
+
+
+p {
+    font-size  : 1.3rem;
+    margin-left: 2rem;
+}
+
+p::before {
+    content  : open-quote;
+    font-size: 2rem;
+    color    : blueviolet;
+}
+
+p::after {
+    content  : close-quote;
+    font-size: 2rem;
+    color    : blueviolet;
+}
+
+
+.happy::after {
+    content     : '😀';
+    margin-left : 10px;
+    /* font-size: 2rem; */
+}
+
+.sad::after {
+    content    : "😔";
+    margin-left: 10px;
+}
+
+.angry::after {
+    content    : "😠";
+    margin-left: 10px;
+}
+
+h3::after {
+    content         : "";
+    display         : inline-block;
+    width           : 20px;
+    height          : 20px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/732/732190.png");
+    background-size : 20px 20px;
+}

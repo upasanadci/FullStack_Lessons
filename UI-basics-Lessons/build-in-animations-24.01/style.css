@@ -1,0 +1,32 @@
+/* transition values : property-name duration  timing-function delay*/
+
+.element1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: all 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 12px;
+}
+
+p {
+    transition: all 1s linear;
+}
+
+
+.element1:hover {
+    background-color: red;
+    /* width: 300px;
+    height: 300px; */
+    /* transform: translate(100px , 100px); */
+    /* transform: translateX(-100px) rotate(-180deg)  */
+   
+}
+
+p:hover {
+    transform: scale(1.3);
+}

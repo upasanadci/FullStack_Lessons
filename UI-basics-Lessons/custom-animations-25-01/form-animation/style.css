@@ -1,0 +1,43 @@
+form {
+    margin          : 50px;
+    padding         : 20px 0;
+    background-color: rgb(49, 45, 45);
+    width           : 50%;
+    color           : white;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+}
+
+form div {
+    margin: 10px 0;
+}
+
+input:focus {
+    animation: inputChange 1s;
+}
+
+form:hover {
+    animation: back 1s infinite;
+}
+
+@keyframes inputChange {
+    from {
+        transform: translateX(5px);
+    }
+
+    to {
+        transform: translateX(0) scale(1.05);
+    }
+}
+
+@keyframes back {
+    from {
+        background-color: aliceblue;
+    }
+
+    to {
+        background-color: gray;
+    }
+
+}

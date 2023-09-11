@@ -1,0 +1,45 @@
+.wrapper{
+    background-color: aqua;
+    width: 100%;
+    
+}
+.listStyle{
+    list-style-type: none;
+    
+}
+.listStyle >li >a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+.image{
+    height:200px;
+    width:100%;
+
+    
+    
+}
+/*Tablet media query*/
+
+
+@media screen and (min-width: 600px) and (orientation: landscape){
+    .wrapper{
+
+    }
+    .image{
+        border:2px solid green;
+        border-radius:12px;    ;
+        -webkit-border-radius:12px    ;
+        -moz-border-radius:12px    ;
+        -ms-border-radius:12px    ;
+        -o-border-radius:12px    ;
+}
+}
+
+/*Desktop media query*/
+@media (min-width:1024px) {
+.image{
+    width:30%;
+    height:200px;
+}
+}

@@ -1,0 +1,53 @@
+
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 50px;
+}
+
+th,td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: pink;
+}
+
+tbody tr:nth-child(even):not(:nth-child(4)) {/*  all the odd trs except the 4 one */
+    background-color: rgb(187, 187, 237);
+}
+
+tbody tr:not(:nth-child(4)) {  /* all the trs except the 4th one */
+    color: rgb(255, 255, 255)
+}
+
+tbody tr:nth-child(5) {
+    font-size: 1.5rem;
+}
+
+tfoot {
+    text-align: center;
+}
+
+caption {
+    font-size: 2rem;
+}
+
+
+/* Difference between :nth-child() and :nth-of-type()  */
+
+p:nth-child(2) {  /* this will style the first p because it's a p tag and its the second child of the parent div */
+    color: greenyellow;   
+}
+
+p:nth-of-type(2) { /* this will style the second p because it only counts the p elements */
+    color: blue;
+}
+
+
+
+
+
+

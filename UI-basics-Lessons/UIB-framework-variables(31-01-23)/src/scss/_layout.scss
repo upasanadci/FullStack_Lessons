@@ -1,0 +1,139 @@
+
+@mixin flexContainer(){
+    display: flex;
+        justify-content: center;
+}
+
+nav{
+    height: 50px;
+    ul{
+        @include flexContainer();
+    }
+    li{
+        padding:$p-size;
+        list-style-type: none;;
+    }
+    a{
+        text-decoration: none;
+        color:#0e749e;
+        &:hover{
+            background-color: aqua;
+        }
+    }
+}
+
+header{
+    background-image:url('../images/header.jpg') ;
+    height:300px;
+    background-size: cover;
+    text-align: center;
+    margin: $m-size;
+    padding: $p-size;
+}
+
+.card-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border:$border-size solid  $secondary-color;
+    background-color: $secondary-color;
+    padding: $p-size;
+    margin: $m-size;
+    
+}
+.img-card{
+   
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+.img1{
+    background-image: url('../images/mountain.jpg');
+}
+.img2{
+    background-image: url('../images/surfer.jpg');
+}
+.img3{
+    background-image: url('../images/tree.jpg');
+}
+
+main{
+    @include flexContainer();
+    flex-direction: column;
+}
+aside{
+    border: $border-size solid $secondary-color;
+    margin: $m-size;
+}
+article{
+    padding: $p-size;
+}
+footer{
+    background-color: #0e749e;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        height: 70px;
+        align-items: center;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    background-color: rgb(51, 207, 11);
+                }
+            }
+           
+        }
+        
+    }
+    
+    
+}
+
+
+
+@media screen and (min-width:768px){
+    .card{
+        width:80%;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    nav ul{
+       justify-content: flex-end;
+    }
+    
+    main{
+        flex-flow: row;
+    }
+    aside{
+        width:25%;
+    }
+    article{
+        width:50%;
+    }
+}
+@media screen and (min-width:1024px){
+    .card-container{
+        justify-content: center;
+        flex-flow: row wrap;
+
+    }
+    .card{
+        width: 40%;
+    }
+    footer ul {
+        display: flex;
+        justify-content:center;
+        gap:10px;
+        padding: 10px;
+        
+    }
+}
+
