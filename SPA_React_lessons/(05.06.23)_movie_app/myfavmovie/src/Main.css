@@ -1,0 +1,22 @@
+h2 {
+    color: yellow;
+}
+
+span {
+    font-size: large;
+    color: white;
+}
+
+.h3-test {
+    color: darkblue;
+}
+
+#h4ID {
+    color: darkkhaki;
+}
+
+.display-movie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}

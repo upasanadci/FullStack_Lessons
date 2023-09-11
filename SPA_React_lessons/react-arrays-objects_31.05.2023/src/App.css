@@ -1,0 +1,8 @@
+.product {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product h3 {
+  margin: 0 30px;
+}
