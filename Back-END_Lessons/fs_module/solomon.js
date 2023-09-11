@@ -1,0 +1,1 @@
+console.log('You can see me by npm run solomon')

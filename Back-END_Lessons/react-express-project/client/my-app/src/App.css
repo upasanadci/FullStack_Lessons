@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  background-color: antiquewhite;
+  border-radius: 4px;
+  border: 2px solid red;
+}
+.container li{
+  /* list-style-type: none; */
+  font-size: 20px;
+}
+
+
+

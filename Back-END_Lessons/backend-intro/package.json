@@ -1,0 +1,16 @@
+{
+  "name": "backend-intro",
+  "version": "1.0.0",
+  "description": "backend intro",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon app.js"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "type": "module",
+  "author": "fbw11",
+  "license": "ISC"
+}
