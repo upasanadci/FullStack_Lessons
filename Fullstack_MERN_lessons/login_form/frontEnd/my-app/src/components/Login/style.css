@@ -1,0 +1,12 @@
+h1{
+    font-size: 30px;
+}
+.button-class{
+    background-color: green;
+    padding:10px;
+    font-size: large;
+    border: 2px solid rgb(231, 231, 158);
+    border-radius: 8px;
+    text-decoration: none;
+    color:rgb(243, 213, 213)
+}
